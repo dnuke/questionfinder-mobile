@@ -1,0 +1,18 @@
+<div>
+	<div id="searchbar">
+		<input id="searchbox" type="text" placeholder="Buscar Cuestionarios" ng-model="searchterm"><a href="http://www.google.com.ve"><div class="btnb"><span class="icon icon-switch"></span><p>Salir</p></div></a>
+	</div>
+	<section ng-cloak>
+		<article ng-cloak ng-repeat="form in forms | searchforms:searchterm" >
+			<a ng-href="#details/{{form.id}}/">
+				<h1>{{form.title}}</h1>
+				<p class="icon icon-warning">{{form.reports_count}}</p>
+				<p class="icon icon-list-numbered">{{form.banksize}}</p>
+				<p>¿{{form.questions_count}}?</p>
+				<p class="cat">{{form.category.name}}</p><br>
+				<p class="icon icon-eye">{{form.visits_count}}</p>
+				<p class="icon icon-calendar">{{form.created_at}}</p>
+			</a>
+		</article>
+	</section>
+</div>

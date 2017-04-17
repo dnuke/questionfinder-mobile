@@ -1,0 +1,283 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: Tahoma, Geneva, Verdana, sans-serif;
+	border-radius: 5px;
+}
+
+body {
+	height:100%;
+	background: #729fcf;
+}
+
+#searchbar {
+	background: #729fcf;
+	height: 55px;
+	position: fixed;
+	top:0;
+	left:0;
+	right:0;
+}
+
+#searchbar .btnb {
+	position:relative;
+	color: white;
+	width: 16%;
+	padding-top: 10px;
+	display: inline-block;
+	vertical-align: middle;
+	background: #729fcf;
+	cursor: pointer;
+	text-align: center;
+	font-size: 16px;
+}
+
+#searchbox {
+	position:relative;
+	display: inline;
+	width: 80.8%;
+	margin: auto 0;
+	margin-left:1%;
+	margin-right:1%;
+	margin-top: 6px;
+	padding-top:8px;
+	padding-bottom:8px;
+	background: white;
+	border: 0px solid #729fcf;
+	color: black;
+	vertical-align: middle;
+	font-size: 16px;
+    padding-left: 1%;
+}
+
+section {
+	display: block;
+	margin: 0 auto;
+	margin-top: 55px;
+	width: 97.5%;
+	background: #8eb0d3;
+}
+
+section article {
+	display: inline-block;
+	color: white;
+	width: 92%;
+	margin: 0 auto;
+	margin-top: 6px;
+	margin-bottom: 6px;
+	padding-bottom: 2px;
+	margin-left:4%;
+	background: #009933;
+	text-align: center;
+	font-size: 13.5px;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+section article a {
+	text-decoration: none;
+	color: white;
+	display: block;
+}
+
+section article p{
+	display: inline-block;
+	background: #009933;
+	text-align: left;
+	float: left;
+	margin-right: 1%;
+	margin-left: 1%;
+}
+
+section article h1{
+	font-size: 16px;
+	background: #009933;
+	margin: 0 auto;
+	margin-top: 2px;
+	margin-bottom: 6px;
+	padding-bottom: 2px;
+	margin-left:4%;
+}
+
+section article .cat{
+	display: inline-block;
+	background: #729fcf;
+	text-align: center;
+	float: right;
+	margin-right: 1.125%;
+	margin-top: 5px;
+	padding: 1%;
+	font-size: 14px;
+}
+
+#formcontent {
+	display: inline-block;
+	margin: 0 auto;
+	padding-top: 5px;
+	padding-bottom: 3%;
+	width: 97.5%;
+	background: #8eb0d3;
+}
+
+#formcontent h1 {
+	text-align: center;
+	background: #009933;
+	color: white;
+	font-size: 22px;
+	margin: 0 auto;
+	margin-top: 65px;
+	margin-bottom: 6px;
+	padding-bottom: 2px;
+	padding-top: 5px;
+	margin-left:4%;
+	margin-right: 4%;
+}
+
+#formcontent #info {
+	display: inline-block;
+	color: white;
+	width: 92%;
+	margin: 0 auto;
+	margin-top: 6px;
+	margin-bottom: 6px;
+	padding-bottom: 2px;
+	padding-top: 5px;
+	margin-left:4%;
+	background: #009933;
+	text-align: center;
+	font-size: 20px;
+	text-decoration: none;	
+}
+
+#formcontent #info p{
+	display: inline-block;
+	background: #009933;
+	text-align: left;
+	float: left;
+	margin-right: 1%;
+	margin-left: 1%;
+}
+
+#formcontent a {
+	display: inline-block;
+	text-align: center;
+	color: white;
+	background: #99ff66;
+	width: 95%;
+	cursor: no-drop;
+	margin-left: 4%;
+	margin-right: 4%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	font-size: 30px;
+}
+
+#formcontent #info .cat{
+	display: inline-block;
+	background: #729fcf;
+	text-align: center;
+	margin: auto 0;
+	padding: 5px;
+	font-size: 20px;
+	margin-top: 5px;
+	margin-left: 1%;
+}
+
+#formcontent #info #desc{
+	margin: 5px;
+	background: white;
+	color: black;
+	padding: 1.5%;
+}
+
+@media screen and (min-width: 560px){
+	section article {
+		width: 45%;
+		margin: 0 auto;
+		margin-top: 6px;
+		margin-bottom: 6px;
+		padding-bottom: 5px;
+		margin-left: 3%;
+		background: #009933;
+		text-align: center;
+		font-size: 16px;
+	}
+	section article h1{
+		font-size: 17px;
+	}
+	#searchbar .btnb {
+		width: 10%;
+	}
+	#searchbox {
+		width: 87%;
+	}
+}
+
+@media screen and (min-width: 768px){
+	#searchbar .btnb {
+		width: 8%;
+	}
+	#searchbox {
+		width: 89%;
+	}
+}
+
+@media screen and (min-width: 1024px){
+	section article {
+		width: 30%;
+		margin: 0 auto;
+		margin-top: 6px;
+		margin-bottom: 6px;
+		padding-bottom: 5px;
+		margin-left: 2.5%;
+		background: #009933;
+		text-align: center;
+		font-size: 19px;
+	}
+	#searchbar .btnb {
+		width: 6%;
+	}
+	#searchbox {
+		width: 91%;
+	}
+}
+
+@media screen and (min-width: 1360px){
+	section article {
+		width: 22%;
+		margin: 0 auto;
+		margin-top: 6px;
+		margin-bottom: 6px;
+		padding-bottom: 5px;
+		margin-left: 2.25%;
+		background: #009933;
+		text-align: center;
+		font-size: 20px;
+	}
+	#searchbar .btnb {
+		width: 5%;
+	}
+	#searchbox {
+		width: 92%;
+	}
+}
+
+@media screen and (min-width: 1920px){
+	section article {
+		width: 17%;
+		margin: 0 auto;
+		margin-top: 6px;
+		margin-bottom: 6px;
+		padding-bottom: 5px;
+		margin-left: 2.33%;
+		background: #009933;
+		text-align: center;
+		font-size: 23px;
+	}
+	#searchbar .btnb {
+		width: 3%;
+	}
+	#searchbox {
+		width: 96%;
+	}
+}

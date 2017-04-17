@@ -1,0 +1,21 @@
+<div>
+	<div id="searchbar">
+		<input id="searchbox" type="text" placeholder="Buscar Cuestionarios" ng-model="searchterm"><a href="#formlist"><div class="btnb"><span class="icon icon-arrow-left"></span><p>Atrás</p></div></a>
+	</div>
+	<section id="formcontent" ng-controller="detailsController" ng-cloak>
+		<h1>{{form.title}}</h1>
+		<div id="info">
+			<p class="icon icon-warning">{{form.reports_count}}</p>
+			<p class="icon icon-list-numbered">{{form.banksize}}</p>
+			<p>¿{{form.questions_count}}?</p><br>
+			<p class="icon icon-eye">{{form.visits_count}}</p>
+			<p class="icon icon-calendar">{{form.created_at}}</p>
+			<p class="cat">{{form.category.name}}</p>
+			<p id="desc">{{form.details}}</p>
+		</div>
+		<a>
+		Iniciar Cuestionario
+		<span class="icon icon-arrow-right"></span>
+		</a>
+	</section>
+</div>
