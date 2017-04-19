@@ -17,7 +17,6 @@ app.filter('searchforms', function(){
 });
 
 app.controller('formsloadController', function ($scope,$http){
-	$scope.pagetitle='Questionfinder-Start';
 	$http.get("https://qfapi.herokuapp.com/v1/forms")
 	.then(function(response){
 		dat = response.data;
@@ -45,7 +44,6 @@ app.config(function($routeProvider){
   	});
 
 app.controller('detailsController', function($scope,$routeParams,$http){
-	$scope.pagetitle='Questionfinder-Details';
 	id=$routeParams.id;
 	$http.get("https://qfapi.herokuapp.com/v1/forms/"+id)
 	.then(function(response){
